@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+  color: #252a34;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.blend {
+  mix-blend-mode: darken;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 5px;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.5s;
+}
+header nav a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #252a34;
+}
+header nav a:hover {
+  color: rgba(79, 0, 0, 0.9843137255);
+  transition: all 0.5s;
+}
+header nav img {
+  width: 100px;
+}
+header #nav-1 a {
+  border-right: 1px solid;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+header #nav-2 {
+  font-size: 13px;
+}
+@media screen and (max-width: 1000px) {
+  header #nav-2 {
+    display: none;
+  }
+}
+
+.hero {
+  padding: 50px 100px;
+  background: linear-gradient(rgb(214, 214, 214) 40%, #eaeaea 40%);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    justify-content: none;
+  }
+}
+.hero #slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero #slogan h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  width: 600px;
+}
+@media screen and (max-width: 1000px) {
+  .hero #slogan h1 {
+    font-size: 50px;
+  }
+}
+.hero #slogan h1 span {
+  font-family: "Times New Roman", Times, serif;
+}
+.hero #slogan p {
+  text-align: center;
+  width: 400px;
+  margin-top: 5px;
+}
+.hero #slogan img {
+  width: 200px;
+  mix-blend-mode: darken;
+  margin-top: 70px;
+}
+.hero #slogan h2 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  margin-top: 120px;
+  white-space: nowrap;
+}
+.hero #slogan h2 span {
+  font-family: "Times New Roman", Times, serif;
+}
+.hero #slogan #sec-p {
+  margin-top: 80px;
+}
+.hero #slogan button {
+  margin-top: 80px;
+  background-color: #e50000;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 700;
+  color: #eaeaea;
+  padding: 20px 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero #slogan button:hover {
+  background-color: rgba(79, 0, 0, 0.9843137255);
+  transition: all 0.5s;
+}
+.hero #banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.hero #banner #main-img {
+  width: 900px;
+}
+@media screen and (max-width: 1000px) {
+  .hero #banner #main-img {
+    margin-top: 40px;
+    width: 500px;
+  }
+}
+.hero #banner #track-img {
+  width: 500px;
+  mix-blend-mode: darken;
+}
+.hero #banner p {
+  font-size: 17px;
+  font-weight: 500;
+  width: 500px;
+  text-align: center;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+main h1 span {
+  color: #e50000;
+  font-weight: 600;
+}
+main #cars-section {
+  width: 90%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+main #cars-section .cars {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+@media screen and (max-width: 1000px) {
+  main #cars-section .cars {
+    flex-direction: column;
+    justify-content: none;
+  }
+}
+main #cars-section .cars-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+main #cars-section .cars-card img {
+  width: 100%;
+}
+main #cars-section .cars-card h3 {
+  text-align: center;
+}
+main #cars-section button {
+  padding: 10px 70px;
+  background-color: #08d9d6;
+  border: none;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 3px;
+  color: rgb(238, 238, 238);
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+main #cars-section button:hover {
+  background-color: rgb(0, 154, 154);
+  transition: all 0.5s;
+}
+main .design {
+  height: 50vh;
+  margin-top: 60px;
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .design p {
+  width: 500px;
+  text-align: center;
+}
+main .design button {
+  background-color: rgba(245, 222, 179, 0);
+  color: white;
+  border: 1px solid white;
+  padding: 15px 60px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+}
+main .design button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+}
+main #interior {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), black), url(/images/interior.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main #exterior {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.47), black), url(/images/exterior-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  text-align: justify;
+  padding: 120px;
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 20px;
+  }
+}
+footer img {
+  width: 200px;
+}
+footer section {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */
